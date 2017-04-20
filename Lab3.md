@@ -53,3 +53,27 @@ my_ifelse(c(2,5,6,3,4,9,11,6,2,3,4), ">=",6)
 my_ifelse(c(2,5,6,3,4,9,11,6,2,3,4), "==",6)
 ```
 [1] 6 6
+
+4.	Функція columnmean(x, removeNA), яка розраховує середнє значення (mean) по кожному стовпцю матриці, або data frame. Логічний параметр removeNA вказує, чи видаляти NA значення. По замовчуванню він дорівнює TRUE.
+```r
+columnmean<-function(x,removeNA=TRUE){
+     for(i in seq_len(ncol(x))){
+         print(mean(x[,i],trim=0,na.rm=removeNA))
+     }
+ }
+> mat_na=matrix(c(1,3,NA,7),2,2)
+> mat_na
+```
+     [,1] [,2]
+[1,]    1   NA
+[2,]    3    7
+```r
+> columnmean(mat_na,FALSE)
+```
+[1] 2
+[1] NA
+```r> d_frame <- data.frame(abc = 1:4, vjuk = 3:6)
+> columnmean(d_frame)
+```
+[1] 2.5
+[1] 4.5
