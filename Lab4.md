@@ -3,9 +3,10 @@
 name=read.csv("C:\\Users\\Peter\\Desktop\\hw1_data.csv")
 names(name)
 ```
+```
 [1] "Ozone"   "Solar.R" "Wind"    "Temp"    "Month"  
 [6] "Day"
-
+```
 2.	Виведіть перші 6 строк фрейму даних.
 ```r
 head(name, 6)
@@ -24,8 +25,13 @@ head(name, 6)
 ```r
 nrow(name)
 ```
+```
 [1] 153
+
+```
+
 4.	Виведіть останні 10 строк дата фрейму
+
 ```r
 tail(name, 10)
 ```
