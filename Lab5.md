@@ -31,7 +31,9 @@
  my_directory ="C:\\Users\\Peter\\Desktop\\specdata"
 > complete(my_directory,1)
   ```
-  id nobs
+  
+ ```
+ id nobs
 1  1  117
 ```r
 > complete(my_directory,c(2,4,8,10,12))
@@ -42,9 +44,11 @@
 3  8  192
 4 10  148
 5 12   96
+```
 ```r
 > complete(my_directory,50:60)
 ```
+   ```
    id nobs
 1  50  459
 2  51  193
@@ -57,6 +61,7 @@
 9  58  391
 10 59  445
 11 60  448
+```
 ```r
 > complete(my_directory,100)
 ```
@@ -65,6 +70,7 @@ id nobs
 ```r
 > complete(my_directory,1:100)
  ```
+``` 
  id nobs
 1     1  117
 2     2 1041
@@ -166,6 +172,7 @@ id nobs
 98   98  736
 99   99  479
 100 100  104
+```
 ```r
 > complete(my_directory,300)
    ```
