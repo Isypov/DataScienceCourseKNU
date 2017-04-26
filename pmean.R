@@ -1,4 +1,4 @@
-```r
+
 pmean <- function(directory, pollutant, id=1:332){
   filenames <- sprintf("%03d.csv", id)
   filenames <- file.path(directory, filenames)
@@ -27,4 +27,3 @@ corr <- function(directory, threshold=0){
   }
   return(res)
 }
-```
